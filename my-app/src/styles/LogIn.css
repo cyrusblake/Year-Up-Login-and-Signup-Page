@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: blue;
+    background-color: white;
 
 }
    
@@ -16,7 +16,7 @@
     border-radius: 5px;
     
     color: white;
-    background: #1f1f23;
+    /* background: #1f1f23; */
     width: auto;
     height: auto;
     padding: 20px;
@@ -24,7 +24,7 @@
 }
 
 .popup_content>h1{
-    text-align: center;
+   text-align: center;
 }
 
 
@@ -89,12 +89,12 @@
    margin-bottom: 40px;
    margin-left: 15px;
    margin-right: 15px;
-   background-color: blue;
+   background-color: rgb(199, 174, 34);
    border-radius: 5px;
    text-align: center;
    border:none;
    color: black;
-   width: 445px;
+   width: 425px;
    height:30px;
    cursor: pointer;
 
