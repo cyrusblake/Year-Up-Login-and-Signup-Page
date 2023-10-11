@@ -47,7 +47,7 @@ function LogIn(){
             </div>
             <div className="popup" id="popup-1">
                  <div>
-                        {/* <img src={logo} alt="img"/> */}
+                 <img  src={'https://www.yearup.org/themes/yearup/assets/img/yu-logo-copy.svg'} alt=""/>
                 </div>
                 <div className="popup_content">
                    

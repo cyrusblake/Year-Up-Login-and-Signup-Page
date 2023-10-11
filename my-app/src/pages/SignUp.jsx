@@ -40,6 +40,9 @@ function SignUp() {
                 <NavBar/>
             </div>
             <div className="popup" id="popup-2">
+                <div>
+                 <img  src={'https://www.yearup.org/themes/yearup/assets/img/yu-logo-copy.svg'} alt=""/>
+                </div>
                 <div className="popup_content">
                     <h1 className='sh1'>Join Contor Today</h1>
                     <form onSubmit={handleSubmit}>
