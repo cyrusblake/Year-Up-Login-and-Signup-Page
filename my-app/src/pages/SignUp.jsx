@@ -40,11 +40,12 @@ function SignUp() {
                 <NavBar/>
             </div>
             <div className="popup" id="popup-2">
-                <div>
-                 <img  src={'https://www.yearup.org/themes/yearup/assets/img/yu-logo-copy.svg'} alt=""/>
-                </div>
+                
                 <div className="popup_content">
-                    <h1 className='sh1'>Join Contor Today</h1>
+                   
+                    <img  src={'https://www.yearup.org/themes/yearup/assets/img/yu-logo-copy.svg'} alt=""/>
+                    
+                    <h1 className='sh1'>Sign Up</h1>
                     <form onSubmit={handleSubmit}>
                         <div className='uu'>
                             <p>Email</p>
@@ -58,7 +59,7 @@ function SignUp() {
                         </div>
                         <button type="submit" className='sb'>Sign Up</button>
                     </form>
-                    <Link to='/LogIn' className="b-btn">Already a Contor user? Log in</Link>
+                    <Link to='/LogIn' className="b-btn">Already have an account? Log in</Link>
                 </div>
             </div>
           
