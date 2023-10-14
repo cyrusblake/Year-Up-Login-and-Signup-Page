@@ -1,5 +1,6 @@
 import react from 'react'
 import '../styles/NavBar.css'
+import { Link } from 'react-router-dom';
 import yearupyLogo from '../assets/yearupylogo.webp'
 // import yearupLeft from '../assets/yearupLeft.png'
 
@@ -17,7 +18,11 @@ function NavBar() {
                         <p>Internships</p>
                         <p>Training</p>
                         <p>About</p>
-                        <p>Home</p>
+                        <p>
+                            <Link className='h-link' to='/Home'>
+                                Home
+                            </Link>
+                        </p>
                     </div>
                         
                    
