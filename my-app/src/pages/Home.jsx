@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import '../styles/Home.css'
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import NavBar from '../components/NavBar';
 
 function Home() {
 
@@ -43,6 +44,7 @@ function Home() {
     return(
           <>
             <div>
+                <NavBar/>
                 {
                     auth ?
                     <div>
