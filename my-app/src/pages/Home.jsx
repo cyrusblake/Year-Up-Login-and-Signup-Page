@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react'
 import '../styles/Home.css'
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import NavBar from '../components/NavBar';
+import '../styles/NavBar.css'
+import yearupyLogo from '../assets/yearupylogo.webp'
+// import NavBar from '../components/NavBar';
 
 function Home() {
 
@@ -34,31 +36,83 @@ function Home() {
         axios.get('http://localhost:8081/logout')
         .then(res => {
             location.reload(true);
+            alert("You have been loged out!")
         }).catch(err => console.log(err));
     }
 
-
-
-
-
     return(
-          <>
-            <div>
-                <NavBar/>
+          <>    
                 {
-                    auth ?
-                    <div>
-                        <h3>You are Atuthorized --- {email}</h3>
-                        <button onClick={handleDelete}>Logout</button>
+                auth ?
+                <div className="navbar">
+                    <div className="navbar_left">
+                        <div>
+                            <Link to="/Home">
+                                <img className="yimage" src={yearupyLogo} alt=""/>
+                            </Link>
+                        </div>
+                        <div className="lp">
+                            <p>Internships</p>
+                            <p>Training</p>
+                            <p>About</p>
+                            <p>
+                                <Link className='h-link' to='/Home'>
+                                    Home
+                                </Link>
+                            </p>
+                        </div>
                     </div>
-                    :
-                    <div>
-                        <h3>{message}</h3>
-                        <h3>Login Now</h3>
-                        <Link to="/LogIn">LogIn</Link>
+                    <div className="navbar_right">
+                        <div>
+                            <p className='lph' onClick={handleDelete}>Logout</p>
+                        </div>
+                        <div>
+                            <Link to="/Home">
+                                <img className="yrimg" src={'https://www.yearup.org/themes/yearup/assets/img/yu-logo-copy.svg'} alt=""/>
+                            </Link>
+                        </div>
                     </div>
+                </div>
+                :
+                <div className="navbar">
+                    <div className="navbar_left">
+                        <div>
+                            <Link to="/Home">
+                                <img className="yimage" src={yearupyLogo} alt=""/>
+                            </Link>
+                        </div>
+                        <div className="lp">
+                            <p>Internships</p>
+                            <p>Training</p>
+                            <p>About</p>
+                            <p>
+                                <Link className='h-link' to='/Home'>
+                                    Home
+                                </Link>
+                            </p>
+                        </div>  
+                    </div>
+                    <div className="navbar_right">
+                        <div className='rp'>
+                            <p className='lph'> 
+                                <Link className='h-link' to='/LogIn'>Login</Link>
+                            </p>
+                            <p className='lph'>
+                                <Link className='h-link' to='/SignUp'>Signup</Link>
+                            </p>
+                        </div>
+                        <div>
+                            <Link to="/Home">
+                                <img className="yrimg" src={'https://www.yearup.org/themes/yearup/assets/img/yu-logo-copy.svg'} alt=""/>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
                 }
-            </div>
+                <div className='b-div'> 
+                    {/* <img className='mi'  src={'https://www.yearup.org/themes/yearup/assets/img/yu-logo-copy.svg'} alt=""/> */}
+                    <img className='mi'  src={'https://www.yearup.org/themes/yearup/assets/img/yu-logo-copy.svg'} alt=""/>
+                </div>
         </>
     )
 } export default Home

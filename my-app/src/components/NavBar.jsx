@@ -12,7 +12,9 @@ function NavBar() {
             <div className="navbar">
                 <div className="navbar_left">
                     <div>
-                        <img className="yimage" src={yearupyLogo} alt=""/>
+                        <Link to="/Home">
+                            <img className="yimage" src={yearupyLogo} alt=""/>
+                        </Link>
                     </div>
                     <div className="lp">
                         <p>Internships</p>
@@ -24,13 +26,12 @@ function NavBar() {
                             </Link>
                         </p>
                     </div>
-                        
-                   
-                  
                 </div>
                 <div className="navbar_right">
                     <div>
-                        <img className="yrimg" src={'https://www.yearup.org/themes/yearup/assets/img/yu-logo-copy.svg'} alt=""/>
+                        <Link to="/Home">
+                            <img className="yrimg" src={'https://www.yearup.org/themes/yearup/assets/img/yu-logo-copy.svg'} alt=""/>
+                        </Link> 
                     </div>
                 </div>
 
