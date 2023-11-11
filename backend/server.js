@@ -103,6 +103,8 @@ app.get('/logout', (req, res) => {
     return res.json({Status: "Success"});
 })
 
-app.listen(8081, () => {
-    console.log("Running.....");
+const PORT = process.env.PORT || 8081;
+
+app.listen(PORT, () => {
+    console.log(`server started on port ${PORT}`);
 })
