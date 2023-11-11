@@ -15,6 +15,8 @@ function SignUp() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        // 'http://localhost:8081/SignUp'
+        // 'https://yu-backend-fv2r.onrender.com/SignUp'
         axios.post('http://localhost:8081/SignUp', values)
         .then((res) => {
             if(res.data.Status === "Success"){

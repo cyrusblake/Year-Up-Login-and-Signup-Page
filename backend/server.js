@@ -11,7 +11,7 @@ const salt = 10;
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: ["https://year-up-login-and-signup-page-3ue5sp3cd-cyrus-blakes-projects.vercel.app/"],
+    origin: ["http://localhost:5173"],
     methods: ["POST", "GET"],
     credentials: true
 }));
@@ -108,3 +108,10 @@ app.get('/logout', (req, res) => {
 app.listen(8081, () => {
     console.log(`server started on port 8081`);
 })
+
+
+// const PORT = process.env.PORT || 8081;
+
+// app.listen(PORT, () => {
+//     console.log(`server started on port 8081`);
+// })
