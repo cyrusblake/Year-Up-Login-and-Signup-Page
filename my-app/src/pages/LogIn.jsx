@@ -22,7 +22,7 @@ function LogIn(){
         axios.post('http://localhost:8081/LogIn', values)
         .then((res) => {
             if(res.data.Status === "Success"){
-                navigate('/');
+                navigate('/Home');
             } else {
                 // alert(res.data.Error);
                 alert("Userame and Password not matched");
