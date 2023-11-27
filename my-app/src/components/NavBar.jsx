@@ -34,7 +34,6 @@ function NavBar() {
                         </Link> 
                     </div>
                 </div>
-
             </div>
         </>
     )
