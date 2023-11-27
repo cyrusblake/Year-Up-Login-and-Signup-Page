@@ -123,6 +123,7 @@ input::placeholder {
 
 .b-btn {
     margin-left: 15px;
+    font-size: 15px;
     cursor: pointer;
     text-decoration: none;
     color: white;
