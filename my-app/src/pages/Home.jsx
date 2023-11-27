@@ -113,6 +113,7 @@ function Home() {
                     {/* <img className='mi'  src={'https://www.yearup.org/themes/yearup/assets/img/yu-logo-copy.svg'} alt=""/> */}
                     <img className='mi'  src={'https://www.yearup.org/themes/yearup/assets/img/yu-logo-copy.svg'} alt=""/>
                 </div>
+                
         </>
     )
 } export default Home
