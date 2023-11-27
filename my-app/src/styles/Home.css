@@ -22,6 +22,8 @@
     display: flex;
 }
 .lph{
+    margin-top: 15px;
+    margin-bottom: 15px;
     font-weight: bold;
     font-size: 20px;
     padding: 20px 16px;
@@ -38,4 +40,18 @@
 .mi {
     height: 800px;
     width: 800px ;
+}
+
+
+@media only screen and (max-width: 500px){
+    .h-link{
+        font-size: 10px;
+    }
+
+    .mi {
+        height: 350px;
+        width: 350px ;
+
+    }
+    
 }
