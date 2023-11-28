@@ -60,15 +60,14 @@ function Home() {
                                     Home
                                 </Link>
                             </p>
+
                         </div>
                     </div>
                     <div className="navbar_right">
-                        <div>
-                            <p className='lph' onClick={handleDelete}>Logout</p>
-                        </div>
+                        <p className='logout' onClick={handleDelete}>Logout</p>
                         <div>
                             <Link to="/Home">
-                                <img className="yrimg" src={'https://www.yearup.org/themes/yearup/assets/img/yu-logo-copy.svg'} alt=""/>
+                                <img className="hyrimg" src={'https://www.yearup.org/themes/yearup/assets/img/yu-logo-copy.svg'} alt=""/>
                             </Link>
                         </div>
                     </div>
@@ -90,20 +89,20 @@ function Home() {
                                     Home
                                 </Link>
                             </p>
+
+                             
                         </div>  
                     </div>
                     <div className="navbar_right">
-                        <div className='rp'>
-                            <p className='lph'> 
-                                <Link className='h-link' to='/LogIn'>Login</Link>
-                            </p>
-                            <p className='lph'>
-                                <Link className='h-link' to='/SignUp'>Signup</Link>
-                            </p>
-                        </div>
+                        <p className=''> 
+                            <Link className='h-link' to='/LogIn'>Login</Link>
+                        </p>
+                        <p className=''>
+                            <Link className='h-link' to='/SignUp'>Signup</Link>
+                        </p>
                         <div>
                             <Link to="/Home">
-                                <img className="yrimg" src={'https://www.yearup.org/themes/yearup/assets/img/yu-logo-copy.svg'} alt=""/>
+                                <img className="hyrimg" src={'https://www.yearup.org/themes/yearup/assets/img/yu-logo-copy.svg'} alt=""/>
                             </Link>
                         </div>
                     </div>
