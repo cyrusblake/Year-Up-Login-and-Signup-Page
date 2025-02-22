@@ -15,7 +15,8 @@ function Home() {
     
     axios.defaults.withCredentials = true;
     useEffect(() => {
-        axios.get('http://localhost:8081')
+        const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8081';
+        axios.get(`${backendUrl}`)
         .then((res) => {
             if(res.data.Status === "Success"){
                 setAuth(true)
@@ -33,7 +34,8 @@ function Home() {
     }, [])
 
     const handleDelete = () => {
-        axios.get('http://localhost:8081/logout')
+        const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8081';
+        axios.delete(`${backendUrl}/LogOut`)
         .then(res => {
             location.reload(true);
             alert("You have been loged out!")

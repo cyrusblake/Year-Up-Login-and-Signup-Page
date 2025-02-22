@@ -17,7 +17,9 @@ function SignUp() {
         event.preventDefault();
         // 'http://localhost:8081/SignUp'
         // 'https://yu-backend-fv2r.onrender.com/SignUp'
-        axios.post('http://localhost:8081/SignUp', values)
+
+        const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8081/SignUp';
+        axios.post(`${backendUrl}.SignUp`, values)
         .then((res) => {
             if(res.data.Status === "Success"){
                 navigate('/LogIn');
